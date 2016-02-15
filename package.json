@@ -12,6 +12,7 @@
   "devDependencies": {
     "mocha": "2"
   },
+
   "scripts": {
     "api_test":"mocha",
     "fixtures_test":"cd test/fixtures/test && node counterstream.js",
