@@ -15,7 +15,8 @@
   "scripts": {
     "api_test":"mocha",
     "fixtures_test":"cd test/fixtures/test && node counterstream.js",
-    "test": "npm run fixtures_test && npm run api_test"
+    "test": "npm run fixtures_test && npm run api_test",
+    "test_travis" : "npm install && npm run test"
   },
   "main": "index"
 }
