@@ -10,7 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "2"
   },
   "scripts": {
     "test": "mocha"
