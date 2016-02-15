@@ -4,10 +4,16 @@
   "description": "generator toolkit",
   "keywords": [],
   "author": "Mikail Bagishov <bagishov.mikail@yandex.net>",
-  "repository": { "type": "git", "url": "git://github.com/MikailBag/gentk.git" },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MikailBag/gentk.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
   },
   "main": "index"
 }
