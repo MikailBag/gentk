@@ -1,7 +1,12 @@
 
 # gentk
+[![Build Status](https://travis-ci.org/MikailBag/gentk.svg?branch=master)](https://travis-ci.org/MikailBag/gentk)
+
+
 
   generator toolkit
+
+
 
 ## License 
 
