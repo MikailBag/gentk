@@ -1,7 +1,11 @@
 os:
  - linux
  - osx
-language: node_js
+language: cpp
+env:
+  matrix:
+    - TRAVIS_NODE_VERSION="5"
+    - TRAVIS_NODE_VERSION="4"
 node_js:
  - "4"
  - "5"
@@ -9,5 +13,5 @@ before_install:
 # nvm is not yet supported on osx, manually install
  - git clone https://github.com/creationix/nvm.git /tmp/.nvm
  - source /tmp/.nvm/nvm.sh
- - nvm install $NODE_VERSION
- - nvm use $NODE_VERSION
+ - nvm install $TRAVIS_NODE_VERSION
+ - nvm use $TRAVIS_NODE_VERSION
