@@ -4,8 +4,9 @@ class CounterStream extends stream.Readable {
     constructor(options) {
         options = options || {};
         options.objectMode = true;
+        super(options);
         console.dir(this);
-        stream.Readable.call(this, options);
+
         this.max = options.max || 100;
         this.current = 0;
     }
