@@ -9,6 +9,7 @@ env:
 node_js:
  - "4"
  - "5"
+script: npm run test
 before_install:
 # nvm is not yet supported on osx, manually install
  - git clone https://github.com/creationix/nvm.git /tmp/.nvm
