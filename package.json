@@ -1,0 +1,13 @@
+{
+  "name": "gentk",
+  "version": "0.0.1",
+  "description": "generator toolkit",
+  "keywords": [],
+  "author": "Mikail Bagishov <bagishov.mikail@yandex.net>",
+  "repository": { "type": "git", "url": "git://github.com/MikailBag/gentk.git" },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "main": "index"
+}
