@@ -17,7 +17,8 @@ describe("maketk", function () {
                 stream.on('end', function(){
                     assert.equal(calls, 10);
                     callback()
-                })
+                });
+                maketk.streaming.pipeToGen(stream, gen);
             })
         })
     })

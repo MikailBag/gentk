@@ -1,4 +1,6 @@
-support
-test
-examples
-*.sock
+/test
+/.idea
+/Makefile
+/.travis.yml
+/.gitignore
+/node_modules
