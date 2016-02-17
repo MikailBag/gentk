@@ -12,7 +12,7 @@ describe("maketk", function () {
                 function* gen(/*stream*/) {
                     while (yield) {
                         calls++;
-                        console.log(`call#${calls}`);
+                        console.log(`!!!!!!call#${calls}`);
 
                     }
                 }
