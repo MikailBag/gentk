@@ -9,7 +9,6 @@ class CounterStream extends stream.Readable {
         options = options || {};
         options.objectMode = true;
         super(options);
-        console.dir(this);
 
         this.max = options.max || CounterStream.defaultMax;
         this.current = 0;
