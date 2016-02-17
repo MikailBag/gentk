@@ -1,6 +1,9 @@
 "use strict";
 const stream = require("stream");
 class CounterStream extends stream.Readable {
+    static get defaultMax(){
+        return 100;
+    }
     constructor(options) {
         console.log("!!!!!!creating new counter stream");
         options = options || {};
@@ -8,7 +11,7 @@ class CounterStream extends stream.Readable {
         super(options);
         console.dir(this);
 
-        this.max = options.max || 100;
+        this.max = options.max || CounterStream.defaultMax;
         this.current = 0;
     }
 
