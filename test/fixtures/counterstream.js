@@ -5,7 +5,7 @@ class CounterStream extends stream.Readable {
         return 100;
     }
     constructor(options) {
-        console.log(`!!!!!!creating new counter stream from ${(new Error).stack}`);
+        console.log(`!!!!!!creating new counter stream`);
         options = options || {};
         options.objectMode = true;
         super(options);
