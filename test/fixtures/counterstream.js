@@ -2,6 +2,7 @@
 const stream = require("stream");
 class CounterStream extends stream.Readable {
     constructor(options) {
+        console.log("!!!!!!creating new counter stream");
         options = options || {};
         options.objectMode = true;
         super(options);
@@ -13,8 +14,10 @@ class CounterStream extends stream.Readable {
 
     _read() {
         this.current += 1;
+        console.log(`!!!!!emitting ${this.current}`);
         this.push(this.current);
         if (this.current == this.max) {
+            console.log("!!!!!!stopping because max pushed");
             this.push(null);
         }
     }
